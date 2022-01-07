@@ -1,0 +1,38 @@
+{
+  "name": "@ahrefs/bs-react-virtualized",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "refmt": "find ./src ./examples -type f -name \"*.re\" | xargs bsrefmt --in-place"
+  },
+  "description": "Bucklescript bindings for Recharts",
+  "homepage": "https://github.com/ahrefs/bs-react-virtualized#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ahrefs/bs-react-virtualized.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahrefs/bs-react-virtualized/issues"
+  },
+  "author": "ahrefs",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "chart",
+    "react-component",
+    "bucklescript",
+    "recharts",
+    "binding"
+  ],
+  "devDependencies": {
+    "bs-platform": "^8.2.0",
+    "reason-react": ">=0.7.0"
+  },
+  "peerDependencies": {
+    "reason-react": ">=0.7.0",
+    "react-virtualized": "^9.21.0"
+  }
+}
