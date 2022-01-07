@@ -7,7 +7,7 @@
     "clean": "bsb -clean-world",
     "refmt": "find ./src ./examples -type f -name \"*.re\" | xargs bsrefmt --in-place"
   },
-  "description": "Bucklescript bindings for Recharts",
+  "description": "Bucklescript bindings for react-virtualized",
   "homepage": "https://github.com/ahrefs/bs-react-virtualized#readme",
   "repository": {
     "type": "git",
