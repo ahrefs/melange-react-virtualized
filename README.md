@@ -23,6 +23,12 @@ Add bs-react-virtualized to `bs-depenencies` in your `bsconfig.json`!
 }
 ```
 
+to include styles
+
+```js
+[%bs.raw {|require("react-virtualized/styles.css")|}];
+```
+
 # Usage Example
 
 ```re
