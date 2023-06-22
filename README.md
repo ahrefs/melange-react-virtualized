@@ -1,26 +1,34 @@
-# bs-react-virtualized
+# melange-react-virtualized
 
-This is [Bucklescript](https://bucklescript.github.io/) bindings for [react-virtualized](https://github.com/bvaughn/react-virtualized).
+These are the [Melange](https://melange.re/) bindings for [react-virtualized](https://github.com/bvaughn/react-virtualized).
 🚧 It is not completed, we are adding bindings as we go. Doesn't follow semver at this point. 🚧
 
-# Install, [npm](https://www.npmjs.com/package/@ahrefs/bs-react-virtualized)
+# Install
+
+Install [opam](https://opam.ocaml.org/) package manager.
+
+Then:
 
 ```
-yarn add @ahrefs/bs-react-virtualized
+opam pin add melange-react-virtualized.dev git+https://github.com/ahrefs/melange-react-virtualized.git#master
+```
+
+The bindings support the version `^9.0.2` of `react-virtualized` npm package, which should be installed separately:
+
+```json
+  "dependencies": {
+    "react-virtualized": "^9.0.2"
+  }
 ```
 
 # Setup
 
-Add bs-react-virtualized to `bs-depenencies` in your `bsconfig.json`!
+Add `melange-react-virtualized` to the `libraries` in your `dune` file:
 
-```js
-{
-  /* ... */
-  "bs-dependencies": [
-    "@ahrefs/bs-react-virtualized"
-  ],
-  /* ... */
-}
+```dune
+; ...
+  (libraries melange-react-virtualized)
+; ...
 ```
 
 to include styles
@@ -31,9 +39,6 @@ to include styles
 
 # Usage Example
 
-```re
-// TODO
-```
-
+See [this test file](./tests/test.re).
 
 Check [react-virtualized documentation](https://github.com/bvaughn/react-virtualized/tree/master/docs#documentation) for available props.
