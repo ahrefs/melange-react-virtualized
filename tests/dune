@@ -2,4 +2,4 @@
  (target tests)
  (libraries reason-react reactVirtualized)
  (preprocess
-  (pps melange.ppx reactjs-jsx-ppx)))
+  (pps melange.ppx reason-react-ppx)))

@@ -13,7 +13,7 @@ help: ## Print this help message
 
 .PHONY: create-switch
 create-switch: ## Create opam switch
-	opam switch create . 4.14.1 -y --deps-only
+	opam switch create . 4.14.1 --no-install
 
 .PHONY: init
 init: create-switch install ## Configure everything to develop this repository in local
@@ -21,8 +21,10 @@ init: create-switch install ## Configure everything to develop this repository i
 .PHONY: install
 install: ## Install development dependencies
 	opam update
+	# pin reason-react and ppx as the latter is not available in opam yet
+	opam pin add reason-react-ppx.dev -y git+https://github.com/reasonml/reason-react#52aa51b8a0e85788f6d775b409a5594c0022691f
+	opam pin add reason-react.dev -y git+https://github.com/reasonml/reason-react#52aa51b8a0e85788f6d775b409a5594c0022691f
 	opam install -y . --deps-only
-	opam pin -y add $(project_name).dev . --working-dir
 
 .PHONY: build
 build: ## Build the project
