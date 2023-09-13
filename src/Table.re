@@ -1,6 +1,6 @@
 type indexData = {index: int};
 
-[@bs.module "react-virtualized"] [@react.component]
+[@mel.module "react-virtualized"] [@react.component]
 external make:
   (
     ~autoHeight: bool=?,

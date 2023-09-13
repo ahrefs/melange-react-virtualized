@@ -14,9 +14,9 @@ doc: "https://github.com/ahrefs/melange-react-virtualized/"
 bug-reports: "https://github.com/ahrefs/melange-react-virtualized/issues"
 depends: [
   "dune" {>= "3.8"}
-  "ocaml" {>= "4.14.0"}
-  "melange" {>= "1.0.0"}
-  "reason" {>= "3.8.2"}
+  "ocaml"
+  "melange" {>= "2.0.0"}
+  "reason" {>= "3.10.0"}
   "reason-react"
   "reason-react-ppx"
   "ocaml-lsp-server" {with-test}
@@ -37,3 +37,12 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/ahrefs/melange-react-virtualized.git"
+depexts: [
+  ["react-virtualized"] {npm-version = "^9.0.2"}
+]
+pin-depends: [
+  [ "melange.2.0.0"         "git+https://github.com/melange-re/melange.git#e114ad55d185badeb32b3c766c9ab547495eac1b" ]
+  [ "reason.3.10.0"         "git+https://github.com/reasonml/reason.git#972261dab3b651ff8ab9b8b9fcc32940595073dc" ]
+  [ "reason-react.dev"      "git+https://github.com/reasonml/reason-react.git#0ab8d33bd811e02f8d14e202a07ca82f4da6fb33" ]
+  [ "reason-react-ppx.dev"  "git+https://github.com/reasonml/reason-react.git#0ab8d33bd811e02f8d14e202a07ca82f4da6fb33" ]
+]
