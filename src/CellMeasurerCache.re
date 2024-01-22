@@ -7,7 +7,7 @@ type props = {
 
 type t = {rowHeight: int};
 
-[@bs.module "react-virtualized"] [@bs.new] external make: props => t = "CellMeasurerCache";
+[@mel.module "react-virtualized"] [@mel.new] external make: props => t = "CellMeasurerCache";
 
 let clear: (t, int) => unit = [%raw {|
   (cache, rowIndex) => {

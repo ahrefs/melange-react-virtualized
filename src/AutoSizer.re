@@ -3,7 +3,7 @@ type children = {
   height: int,
 };
 
-[@bs.module "react-virtualized"] [@react.component]
+[@mel.module "react-virtualized"] [@react.component]
 external make:
   (
     ~disableHeight: bool=?,
