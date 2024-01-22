@@ -41,8 +41,7 @@ depexts: [
   ["react-virtualized"] {npm-version = "^9.0.2"}
 ]
 pin-depends: [
-  [ "melange.2.0.0"         "git+https://github.com/melange-re/melange.git#e114ad55d185badeb32b3c766c9ab547495eac1b" ]
-  [ "reason.3.10.0"         "git+https://github.com/reasonml/reason.git#972261dab3b651ff8ab9b8b9fcc32940595073dc" ]
-  [ "reason-react.dev"      "git+https://github.com/reasonml/reason-react.git#0ab8d33bd811e02f8d14e202a07ca82f4da6fb33" ]
-  [ "reason-react-ppx.dev"  "git+https://github.com/reasonml/reason-react.git#0ab8d33bd811e02f8d14e202a07ca82f4da6fb33" ]
+  ["melange.dev" "git+https://github.com/melange-re/melange#d2715c469e8cf8bf8cff81b897c212094a9517c5"]
+  ["reason-react.dev" "https://github.com/reasonml/reason-react/archive/1f084f4ecf380b2144809065e5935a41866eab3f.tar.gz"]
+  ["reason-react-ppx.dev" "https://github.com/reasonml/reason-react/archive/1f084f4ecf380b2144809065e5935a41866eab3f.tar.gz"]
 ]

@@ -34,7 +34,7 @@ Add `melange-react-virtualized` to the `libraries` in your `dune` file:
 to include styles
 
 ```js
-[%bs.raw {|require("react-virtualized/styles.css")|}];
+[%mel.raw {|require("react-virtualized/styles.css")|}];
 ```
 
 # Usage Example
